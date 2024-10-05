@@ -36,7 +36,7 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
           echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-          docker tag my-express-project $DOCKER_USERNAME/my-express-project
+          docker tag my-express-project $DOCKER_USERNAME/my-express-nt-project
           docker push $DOCKER_USERNAME/my-express-project
 
       - name: Deploy to Render
