@@ -10,7 +10,7 @@ const app = express();
 //mmiddleware
 app.use(bodyParser.json());
 
-app.get('/',()=>{
+app.get('/',(req,res)=>{
   res.send('{"response:"hello World"}')
 })
 
