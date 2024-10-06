@@ -55,7 +55,7 @@ jobs:
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
         run: |
           echo "Deploying to Render..."
-          curl -X POST https://api.render.com/deploy/svc_\
+          curl -X POST https://api.render.com/deploy/srv-cs1b7868ii6s73d1g8fg \
           -H "Authorization: Bearer $RENDER_API_KEY" \
           -H "Content-Type: application/json" \
           -d '{"branch": "main"}'
