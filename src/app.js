@@ -10,6 +10,10 @@ const app = express();
 //mmiddleware
 app.use(bodyParser.json());
 
+app.get('/',()=>{
+  res.send('{"response:"hello World"}')
+})
+
 // Rate Limiting
 app.use(rateLimiter); 
 
